@@ -4,16 +4,33 @@ using System.Text;
 
 namespace BankAccount
 {
-    public class Client : Account
+    public class Client 
     {
         //fields
-        //invisible
+
+        string acctNumChecking = "";
+        string acctNumSavings = "";
+        string acctOwner = "";
+        
+       
 
         //Properties
 
-        public string AcctNum { get; set; }
-        public string AcctType { get; set; }
-        public double Balance { get; set; }
+        public string AcctNumChecking
+        {
+            get { return this.acctNumChecking; }
+        }
+       
+
+        public string AcctNumSavings
+        {
+            get { return this.acctNumSavings; }
+        }
+
+        public string AcctOwner
+        {
+            get { return this.acctOwner; }
+        }
 
         //Constructors
 
@@ -22,19 +39,22 @@ namespace BankAccount
             //default constructor
         }
 
-        public Client(string AcctNum, string AcctType, double Balance)
+        public Client(string acctNumChecking, string acctNumSavings, string acctOwner )
         {
-        AcctNum = acctNum;
-        AcctType = acctType;
-        Balance = balance;
+         
+        }
 
-        }
-        public override void AccountNum()
+        //Method
+
+        DisplayClien()
         {
-            Console.WriteLine("account number");
+            Console.WriteLine()
         }
+
+        //  public override bool ValidAcct(bool valid);
+    }
     }
 
 
 
-}
+
